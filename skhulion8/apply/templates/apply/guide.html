@@ -1,0 +1,86 @@
+{% extends 'apply/base.html' %}
+{% block content %}
+<style>
+    .paragraph{
+        padding: 0 5%;
+        line-height:1.9em;
+    }
+
+    .sign{
+        margin: 0 5% 30px 0;
+    }
+
+    .a-yellow{
+    color:#f09837;
+    }
+
+    .a-yellow:hover {
+    color: #8a551d;
+    text-decoration:none
+    }
+
+    @media (max-width: 600px){
+        .paragraph{
+            padding: 0 7px;
+            font-size: 16px !important;
+        }
+        .container{
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        .container h3{
+            margin-left: 7px;
+            font-size: 25px !important;
+        }
+    }
+</style>
+
+<div class="pl-md-5 py-3 ml-md-5 mt-5 ml-4" style="font-weight: bold;">
+    <h3 style="font-weight: bold;"><span style="color: #f09837;">멋쟁이사자처럼</span><span style="color:#ff8f66;"> 성공회대학교</span></h3>
+    <h4 style="font-weight: bold; color:#707070;">2020 상반기 리크루팅</h4>
+    <h4 style="font-weight: bold; color:#707070;">활동안내</h4>
+    <div class="border-bottom mr-5" style="max-width: 600px; height: 10px;"></div>
+</div>
+
+    <div class="container my-5">
+        <h3 style="color:black; font-size: 25px; font-weight: 800">주요 활동 및 일정</h3><br>
+        <p class="paragraph" style="font-size:17px;">
+            - 정규 세션 : 매주 화요일 7시 ~ 9시 / 금요일 6시 ~ 8시<br>
+            - 정규 팀 프로젝트 : 연간 운영(학기, 방학 포함)<br>
+            - OT 및 첫 세션 : 4/3(금) 오후 6:00<br>
+            - 중앙 해커톤 : 9월 말 예정<br>
+            - Demo Day : 12월 초 실시 예정 <br>
+        </p>
+        <br>
+    </div>
+
+    <div class="container my-5">
+        <h3 style="color:black; font-size: 25px; font-weight: 800">활동규칙</h3><br>
+        <p class="paragraph" style="font-size:17px;">
+            1. 매주 스터디 모임 지각 3회 시 퇴출입니다<br>
+            2. 지각 시 5000원 + a(분당 천원)입니다.<br>
+            3. 30분 이상 지각 시 무단결석으로 간주하여 퇴출합니다.<br>
+            4. 강의자료 유출 시 즉시 영구적으로 퇴출합니다.<br>
+            5. 과제 가이드라인 미준수 또는 미제출 시 벌금 5천원 + a 입니다.<br>
+            6. 자정 이후 선생님에게 질문 할 수 없습니다.<br>
+            7. 공식행사 미참여 시 퇴출합니다.(공식행사는 FAQ를 확인해주세요)<br>
+        </p>
+        <br>
+    </div>
+
+    <div class="container my-5">
+        <h3 style="color:black; font-size: 25px; font-weight: 800">합격자 과제 안내</h3><br>
+        <p class="paragraph" style="font-size:17px;">
+            - 최종 합격자에 한해 사전 과제가 부여됩니다. <br>
+            - 사전 과제 중 발생하는 문제는 선생님에게 문의하거나 첫 세션일에 도움을 받으실 수 있습니다.<br>
+        </p>
+        <br>
+    </div>
+    <br>
+    <br>
+
+<div class="sign text-right mr-5">
+    <a class="a-yellow" href="{% url 'home' %}">돌아가기</a>  
+</div>
+
+{% endblock %}
